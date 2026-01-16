@@ -1,0 +1,371 @@
+.experience-details {
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f2ff 100%);
+  padding: 50px 20px;
+  min-height: calc(100vh - 80px);
+}
+
+.details-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.back-btn {
+  display: inline-block;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #5568d3;
+  transform: translateX(-4px);
+}
+
+.not-found {
+  background: white;
+  padding: 60px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.not-found h2 {
+  font-size: 28px;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.not-found p {
+  color: #666;
+  margin: 0 0 30px 0;
+  font-size: 16px;
+}
+
+.details-header {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  border: 1px solid rgba(102, 126, 234, 0.1);
+  border-top: 4px solid #667eea;
+}
+
+.header-info h1 {
+  font-size: 32px;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.job-role-text {
+  font-size: 18px;
+  color: #007bff;
+  margin: 0;
+  font-weight: 500;
+}
+
+.header-badges {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.badge.difficulty {
+  color: white;
+}
+
+.badge.experience {
+  background-color: #6c757d;
+  color: white;
+}
+
+.details-meta {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.meta-item strong {
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.meta-item span {
+  color: #555;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.result-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.anonymous {
+  background-color: #e9ecef;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #495057;
+  font-size: 13px;
+  width: fit-content;
+}
+
+.rounds-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rounds-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 0 0 25px 0;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.round-detail {
+  background-color: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border-left: 4px solid #667eea;
+}
+
+.round-detail:last-child {
+  margin-bottom: 0;
+}
+
+.round-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.round-title h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.round-difficulty {
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.topics-section {
+  margin-bottom: 20px;
+}
+
+.topics-section strong {
+  display: block;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.topics-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.topic-tag {
+  background-color: #667eea;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.questions-section {
+  margin-top: 20px;
+}
+
+.questions-section strong {
+  display: block;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.questions-content {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  line-height: 1.8;
+}
+
+.questions-content p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 15px;
+}
+
+.questions-content p:first-child {
+  margin-top: 0;
+}
+
+.questions-content p:last-child {
+  margin-bottom: 0;
+}
+
+.experience-section {
+  margin-top: 20px;
+}
+
+.experience-section strong {
+  display: block;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.experience-section p {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0;
+  border-left: 4px solid #667eea;
+}
+
+.details-footer {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details-footer p {
+  color: #666;
+  font-size: 16px;
+  margin: 0 0 20px 0;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.continue-browsing,
+.share-experience {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.continue-browsing {
+  background-color: #667eea;
+  color: white;
+}
+
+.continue-browsing:hover {
+  background-color: #5568d3;
+  transform: translateY(-2px);
+}
+
+.share-experience {
+  background-color: #28a745;
+  color: white;
+}
+
+.share-experience:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .experience-details {
+    padding: 20px;
+  }
+
+  .details-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-badges {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .details-header h1 {
+    font-size: 24px;
+  }
+
+  .rounds-section,
+  .details-meta,
+  .details-footer {
+    padding: 20px;
+  }
+
+  .details-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .continue-browsing,
+  .share-experience {
+    width: 100%;
+  }
+}
