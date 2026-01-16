@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 import './Home.css';
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
+  const { user } = useAuth();
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -66,18 +68,20 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="cta-section">
-        <div className="container">
-          <div className="cta-content">
-            <h2>Ready to Share Your Story?</h2>
-            <p>Sign in to add your interview experience and help the community!</p>
-            <a href="/login" className="cta-btn">
-              Sign In to Share
-            </a>
+      {/* CTA Section - Only show if NOT logged in */}
+      {!user && (
+        <section className="cta-section">
+          <div className="container">
+            <div className="cta-content">
+              <h2>Ready to Share Your Story?</h2>
+              <p>Sign in to add your interview experience and help the community!</p>
+              <a href="/login" className="cta-btn">
+                Sign In to Share
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
     </div>
   );
 };
