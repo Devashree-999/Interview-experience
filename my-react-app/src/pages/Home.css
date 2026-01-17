@@ -410,17 +410,29 @@
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    padding: 80px 20px 60px 20px;
+    min-height: 500px;
+  }
+
   .hero-content h1 {
-    font-size: 32px;
+    font-size: 36px;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+    line-height: 1.2;
   }
 
   .hero-content p {
-    font-size: 16px;
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 1.4;
   }
 
   .search-form {
     flex-direction: column;
     gap: 12px;
+    max-width: 100%;
+    padding: 0 10px;
   }
 
   .search-input {
@@ -439,22 +451,78 @@
     z-index: 2;
   }
 
-  .features-section h2,
+  .features-section {
+    padding: 60px 20px;
+  }
+
+  .features-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .feature-card {
+    padding: 30px 20px;
+  }
+
+  .feature-card h3 {
+    font-size: 20px;
+  }
+
+  .feature-card p {
+    font-size: 14px;
+  }
+
+  .feature-icon {
+    font-size: 48px;
+  }
+
+  .cta-section {
+    padding: 60px 20px;
+  }
+
   .cta-content h2 {
-    font-size: 28px;
+    font-size: 32px;
+    margin-bottom: 16px;
   }
 
   .cta-content p {
     font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .cta-btn {
+    width: 100%;
+    padding: 16px 40px;
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+}
+
+/* Additional mobile optimization for very small screens */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .features-section h2,
+  .cta-content h2 {
+    font-size: 26px;
   }
 
   .hero-section {
-    padding: 60px 20px;
-    min-height: 400px;
-  }
-
-  .features-section,
-  .cta-section {
-    padding: 60px 20px;
+    padding: 60px 15px 40px 15px;
+    min-height: 450px;
   }
 }
