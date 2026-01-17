@@ -66,7 +66,15 @@ const SearchResults = () => {
           <p>Found {filteredResults.length} experience(s)</p>
         </div>
 
-        <div className={`results-layout ${showFilters ? 'filters-open' : ''}`}>
+        <div 
+          className={`results-layout ${showFilters ? 'filters-open' : ''}`}
+          onClick={(e) => {
+            // Close filters when clicking the overlay (but not on filters sidebar)
+            if (e.target.classList.contains('results-layout') && showFilters) {
+              setShowFilters(false);
+            }
+          }}
+        >
           {/* Filters Sidebar */}
           <aside className={`filters-sidebar ${showFilters ? 'open' : ''}`}>
             <button className="close-filters-btn" onClick={() => setShowFilters(false)}>✕</button>

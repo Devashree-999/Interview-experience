@@ -121,6 +121,26 @@ const DUMMY_EXPERIENCES = [
     tips: 'Clear communication is key, start with brute force then optimize',
     submittedAt: '1/3/2026',
     submittedByEmail: 'newbie@example.com'
+  },
+  {
+    id: 'dummy-6',
+    company: 'Dummy Data',
+    jobRole: 'Test Engineer',
+    overallDifficulty: 'Easy',
+    experienceLevel: 'Fresher',
+    result: 'Selected',
+    anonymous: false,
+    rounds: [
+      {
+        roundName: 'Initial Screening',
+        topicsCovered: ['React', 'DSA'],
+        questions: ['Basic JavaScript question', 'Array operations'],
+        experience: 'Quick and easy, good for understanding process'
+      }
+    ],
+    tips: 'This is dummy data for testing search functionality',
+    submittedAt: '1/15/2026',
+    submittedByEmail: 'test@example.com'
   }
 ];
 
