@@ -144,8 +144,9 @@ export const InterviewProvider = ({ children }) => {
         ...doc.data(),
       }));
       
-      // Use dummy data if no firestore data exists
-      setExperiences(data.length > 0 ? data : DUMMY_EXPERIENCES);
+      // Combine Firestore data with dummy data
+      const combinedData = [...data, ...DUMMY_EXPERIENCES];
+      setExperiences(combinedData);
     } catch (err) {
       console.error('Error fetching experiences:', err);
       setError(err.message);
