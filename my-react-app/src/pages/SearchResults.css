@@ -239,11 +239,12 @@
 
 @media (max-width: 768px) {
   .search-results {
-    padding: 20px;
+    padding: 15px 10px;
   }
 
   .results-container {
     margin: 0;
+    padding: 0;
   }
 
   .header-top {
@@ -315,6 +316,7 @@
 
   .results-grid {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
 
   .filter-group {
