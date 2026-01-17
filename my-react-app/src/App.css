@@ -52,7 +52,7 @@ body,
 }
 
 .nav-brand:hover {
-  transform: scale(1.08) rotate(-1deg);
+  transform: scale(1.08);
   color: #ffd700;
 }
 
